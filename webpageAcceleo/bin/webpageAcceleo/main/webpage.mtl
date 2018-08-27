@@ -1,10 +1,10 @@
 [comment encoding = UTF-8 /]
-[module main('http://www.eclipse.org/ocl/1.1.0/Ecore')/]
+[module webpage('http://www.eclipse.org/ocl/1.1.0/Ecore')/]
 
-[template public main(p : ecore::EPackage)]
+[template public webpage(p : ecore::EPackage)]
 	
 	[comment @main /]
-	[file ('main.txt', false, 'UTF-8')]
+	[file ('webpage.txt', false, 'UTF-8')]
 		[for (it : ecore::EClass | p.eAllContents(ecore::EClass))]
 		[it.name/]
 		[/for]
